@@ -28,7 +28,7 @@ def get_api_info():
     response_object = {
         "Instancia": "Instancia #2 - API #2",
         "Curso": "Seminario de Sistemas 1",
-        "Estudiante": "Anderson Zuleta - 201800"
+        "Estudiante": "Anderson Zuleta - 201800500"
     }
     
     return jsonify(response_object), 200
@@ -53,7 +53,7 @@ def internal_error(error):
 
 if __name__ == '__main__':
     # Configuración del puerto
-    port = int(os.environ.get('PORT', 3002))
+    port = int(os.environ.get('PORT', 3000))
     
     print(f"🚀 API #2 (Python) ejecutándose en http://localhost:{port}")
     print(f"📋 Endpoints disponibles:")
